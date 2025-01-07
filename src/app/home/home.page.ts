@@ -6,7 +6,7 @@ import { RouterLink } from '@angular/router';
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
-  imports: [IonHeader, IonToolbar, IonContent,FontAwesomeModule,IonSearchbar,IonButtons,IonTitle,IonMenuButton,IonMenu,IonMenuToggle,IonButton,IonItem,IonList,RouterLink],
+  imports: [IonHeader, IonToolbar, IonContent,FontAwesomeModule,IonButtons,IonTitle,IonMenuButton,IonMenu,IonMenuToggle,IonButton,IonItem,IonList,RouterLink],
 })
 export class HomePage {
   constructor() {}
