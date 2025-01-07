@@ -1,51 +1,132 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <!-- header -->
-  <div class="left-6">
-    <img src="" alt="Icon">
-    Home
-Categories
-Profile
-Shopping
-  </div>
+    <div class="ion-page" id="main-content">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </div>
+
+    <!-- Header -->
+    <div class="flex flex-row justify-between items-center px-4">
+      <h1 class="text-2xl font-bold mx-auto">COCKTAILPRO</h1>      <!-- <ion-searchbar class="w-1/4"></ion-searchbar> -->
+      <div class="flex gap-6">
+        <span>
+          <i class="fa-regular fa-user text-xl cursor-pointer"></i>
+          Profile
+        </span>
+        <span>
+        <i class="fa-solid fa-store text-xl cursor-pointer"></i>
+        Shop
+        </span>     
+ </div>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <!-- Sidebar Menu -->
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item button>Home</ion-item>
+        <ion-item button>Popular Cocktails</ion-item>
+        <ion-item button>Categories</ion-item>
+        <ion-item button>Tutorials</ion-item>
+        <ion-item button>About Us</ion-item>
+        <ion-item button>Contact</ion-item>
+      </ion-list>
+      <ion-menu-toggle>
+        <ion-button expand="full">Close</ion-button>
+      </ion-menu-toggle>
+    </ion-content>
+  </ion-menu>
 
-<!-- the main image/video -->
+  <!-- Hero Section -->
+  <div class="image1 relative">
+<video autoplay muted loop src="assets/images/cocktail1.mp4"></video>
+    <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
+      <h1 class="text-4xl font-bold mb-4">Discover Your Perfect Cocktail</h1>
+      <p class="text-lg">Explore recipes, learn techniques, and craft like a pro!</p>
+    </div>
+  </div>
 
-<div class="image1 text-center">
-  Search bar (for cocktail names or ingredients)
-<span class="">xxx</span>
-<span>Popular Cocktails , Cocktail Types, Categories</span>
-Classics, Tropical, Mocktails, Seasonal Specials
+  <!-- Category Section -->
+  <div class="image2 flex justify-center items-center text-center py-20">
+    <div>
+      <h2 class="text-3xl font-semibold mb-4">Cocktail Categories</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div [routerLink]="['/category', 'classics']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+          <img src="assets/images/classic.jpg" alt="Classics" class="w-full h-40 object-cover">
+          <div class="bg-[#DAA520] text-white p-4">Classics</div>
+        </div>
+        <div [routerLink]="['/category', 'tropical']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+          <img src="assets/images/tropical.png" alt="Tropical" class="w-full h-40 object-cover">
+          <div class="bg-[#DAA520] text-white p-4">Tropical</div>
+        </div>
+        <div [routerLink]="['/category', 'creamy']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+          <img src="assets/images/creamy.jpg" alt="Creamy" class="w-full h-40 object-cover">
+          <div class="bg-[#DAA520] text-white p-4">Creamy</div>
+        </div>
+        <div [routerLink]="['/category', 'short']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+          <img src="assets/images/short.jpg" alt="Short" class="w-full h-40 object-cover">
+          <div class="bg-[#DAA520] text-white p-4">Short</div>
+        </div>
+        <div [routerLink]="['/category', 'longdrink']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+          <img src="assets/images/long.jpg" alt="Longdrink" class="w-full h-40 object-cover">
+          <div class="bg-[#DAA520] text-white p-4">Longdrink</div>
+        </div>
+        <div [routerLink]="['/category', 'sparkling']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+          <img src="assets/images/sparkling.jpg" alt="Sparkling" class="w-full h-40 object-cover">
+          <div class="bg-[#DAA520] text-white p-4">Sparkling</div>
+        </div>
+        <div [routerLink]="['/category', 'martini']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+          <img src="assets/images/martini.jpg" alt="Martini" class="w-full h-40 object-cover">
+          <div class="bg-[#DAA520] text-white p-4">Martini</div>
+        </div>
+        <div [routerLink]="['/category', 'beer']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+          <img src="assets/images/beer.jpg" alt="Beer" class="w-full h-40 object-cover">
+          <div class="bg-[#DAA520] text-white p-4">Beer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Popular Cocktails Section -->
+  <div class="image3 flex justify-center items-center text-center py-20">
+    <div>
+      <h2 class="text-3xl font-semibold mb-4">Popular Cocktails</h2>
+      <ion-button fill="clear" class="p-2 text-white">Try out our top-rated recipes <div class="border-2 ml-4 border-white rounded-full p-3"><i class="fa-solid fa-arrow-right"></i></div></ion-button>
+
+    </div>
+  </div>
+
+<!-- Learn preping -->
+
+ <!-- Cocktail Making Techniques Section with Background Image -->
+<div class=" flex justify-center items-center text-center py-48" style="background-image: url('assets/images/prepping.jpg'); background-size: cover; background-position: center;">
+  <div class="bg-black bg-opacity-50 w-full h-full flex flex-col justify-center items-center text-white p-8">
+    <h2 class="text-3xl font-semibold mb-4">Cocktail Making Techniques</h2>
+    <p class="text-lg mb-8">Learn how to stir, shake, muddle, and perfect your cocktail-making skills!</p>
+    <div [routerLink]="['/techniques']" class="bg-[#DAA520] text-white p-4 rounded-lg cursor-pointer transition-transform hover:scale-105">
+      <span>Learn the Art of Cocktail Making</span>
+    </div>
+  </div>
 </div>
 
-<!-- Second part  -->
-
-<div class="image2">
-
-<span>yyyyyy</span>
-
-
-</div> 
-<!-- Third part -->
-
-<div class="imag3">
-
-  <span>zzzzz</span>
-  
-  
-  </div> 
-
-  <div class="footer1">
-
-    <span>footer</span>
-    
-    
-    </div> 
 
 
 
+
+
+
+  <!-- Footer -->
+  <div class="footer1 text-center text-white py-5">
+    <p>&copy; 2025 CocktailPro | Crafted with passion for mixology enthusiasts</p>
+  </div>
 </ion-content>

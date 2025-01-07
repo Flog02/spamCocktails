@@ -1,0 +1,74 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cocktail Techniques</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Header Section -->
+  <div class="bg-cover bg-center h-64 flex justify-center items-center text-white" style="background-image: url('assets/images/cocktail_tools.jpg');">
+    <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+      <h1 class="text-4xl font-bold">Master Cocktail Techniques</h1>
+      <p class="mt-2">Explore essential techniques to craft perfect cocktails.</p>
+    </div>
+  </div>
+
+  <!-- Techniques List -->
+  <ion-list>
+    <ion-item button [routerLink]="['/techniques', 'shaking']">
+      <ion-icon slot="start" name="refresh-circle-outline"></ion-icon>
+      <ion-label>
+        <h2 class="font-semibold text-lg">Shaking</h2>
+        <p class="text-sm">Learn how to properly shake cocktails for perfect balance and dilution.</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button [routerLink]="['/techniques', 'stirring']">
+      <ion-icon slot="start" name="cafe-outline"></ion-icon>
+      <ion-label>
+        <h2 class="font-semibold text-lg">Stirring</h2>
+        <p class="text-sm">Master the art of stirring cocktails for smooth, balanced drinks.</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button [routerLink]="['/techniques', 'muddling']">
+      <ion-icon slot="start" name="leaf-outline"></ion-icon>
+      <ion-label>
+        <h2 class="font-semibold text-lg">Muddling</h2>
+        <p class="text-sm">Discover how to release flavors from fruits and herbs effectively.</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button [routerLink]="['/techniques', 'layering']">
+      <ion-icon slot="start" name="layers-outline"></ion-icon>
+      <ion-label>
+        <h2 class="font-semibold text-lg">Layering</h2>
+        <p class="text-sm">Create visually stunning layered cocktails.</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button [routerLink]="['/techniques', 'straining']">
+      <ion-icon slot="start" name="filter-outline"></ion-icon>
+      <ion-label>
+        <h2 class="font-semibold text-lg">Straining</h2>
+        <p class="text-sm">Learn different straining methods for crystal-clear drinks.</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button [routerLink]="['/techniques', 'building']">
+      <ion-icon slot="start" name="construct-outline"></ion-icon>
+      <ion-label>
+        <h2 class="font-semibold text-lg">Building</h2>
+        <p class="text-sm">Assemble simple cocktails directly in the serving glass.</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- Footer -->
+  <div class="text-center text-gray-500 py-4">
+    <p>&copy; 2025 CocktailPro. All rights reserved.</p>
+  </div>
+</ion-content>

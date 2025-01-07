@@ -1,16 +1,18 @@
-.image1{
-  background-image:linear-gradient(red,orange);
-  height: 40rem;
-}
+// .image1{
+//   background-image:linear-gradient(red,orange);
+//   max-height: 40rem;
+// }
 .image2{
-  background-image:linear-gradient(white,black);
-  height: 40rem;
+  background-image:linear-gradient(rgb(0, 0, 0));
+  min-height: 40rem;
 }
 .image3{
-  background-image:linear-gradient(rgb(115, 115, 252),purple);
+  background-image:linear-gradient(rgb(12, 12, 52),rgb(54, 1, 54));
   height: 40rem;
 }
+
+
 .footer1{
-  background-image:linear-gradient(rgb(15, 000, 252),rgb(30, 1, 30));
-  height: 20rem;
+  background-color: black;
+  // height: 10rem;
 }
