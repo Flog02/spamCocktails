@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Stirring</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Technique Header -->
+  <div class="bg-cover bg-center h-64 flex justify-center items-center text-white" style="background-image: url('assets/images/stirring.jpg');">
+    <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+      <h1 class="text-4xl font-bold">Stirring</h1>
+      <p class="mt-2">Master the art of stirring cocktails for smooth, balanced drinks.</p>
+    </div>
+  </div>
+
+  <!-- Technique Details -->
+  <div class="p-4">
+    <h2 class="text-xl font-bold mb-2">How to Stir:</h2>
+    <p>Stirring is typically used for cocktails that contain only spirituous ingredients. It allows for mixing without introducing too much air into the drink.</p>
+
+    <!-- Video Embed -->
+    <h3 class="text-lg font-semibold mt-4">Watch the Stirring Technique</h3>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/your_stirring_video_id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</ion-content>

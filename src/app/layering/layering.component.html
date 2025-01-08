@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Layering</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Technique Header -->
+  <div class="bg-cover bg-center h-64 flex justify-center items-center text-white" style="background-image: url('assets/images/layering.jpg');">
+    <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+      <h1 class="text-4xl font-bold">Layering</h1>
+      <p class="mt-2">Create visually stunning layered cocktails.</p>
+    </div>
+  </div>
+
+  <!-- Technique Details -->
+  <div class="p-4">
+    <h2 class="text-xl font-bold mb-2">How to Layer:</h2>
+    <p>Layering is a technique where different liquids are poured into a glass to create layers based on their densities. It’s perfect for making visually appealing cocktails.</p>
+
+    <!-- Video Embed -->
+    <h3 class="text-lg font-semibold mt-4">Watch the Layering Technique</h3>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/your_layering_video_id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</ion-content>

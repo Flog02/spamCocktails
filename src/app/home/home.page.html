@@ -10,14 +10,15 @@
     <div class="flex flex-row justify-between items-center px-4">
       <h1 class="text-2xl font-bold mx-auto">COCKTAILPRO</h1>      <!-- <ion-searchbar class="w-1/4"></ion-searchbar> -->
       <div class="flex gap-6">
-        <span>
+        <div [routerLink]="['/profile']" class="profile-icon">
+<!-- cursor-pointer doesnt work -->
           <i class="fa-regular fa-user text-xl cursor-pointer"></i>
           Profile
-        </span>
-        <span>
+        </div>
+        <div [routerLink]="['/shop']">
         <i class="fa-solid fa-store text-xl cursor-pointer"></i>
         Shop
-        </span>     
+        </div>     
  </div>
     </div>
   </ion-toolbar>
@@ -33,18 +34,21 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item button>Home</ion-item>
-        <ion-item button>Popular Cocktails</ion-item>
-        <ion-item button>Categories</ion-item>
-        <ion-item button>Tutorials</ion-item>
-        <ion-item button>About Us</ion-item>
-        <ion-item button>Contact</ion-item>
+        <ion-item button [routerLink]="['/home']">Home</ion-item>
+        <ion-item button [routerLink]="['/popular']">Popular Cocktails</ion-item>
+        <ion-item button [routerLink]="['/category']">Categories</ion-item>
+        <ion-item button [routerLink]="['/techniques']">Tutorials</ion-item>
+        <ion-item button [routerLink]="['/about-us']">About Us</ion-item>
+        <ion-item button [routerLink]="['/contacts']">Contact</ion-item>
       </ion-list>
       <ion-menu-toggle>
         <ion-button expand="full">Close</ion-button>
       </ion-menu-toggle>
     </ion-content>
   </ion-menu>
+
+
+
 
   <!-- Hero Section -->
   <div class="image1 relative">
@@ -53,6 +57,25 @@
       <h1 class="text-4xl font-bold mb-4">Discover Your Perfect Cocktail</h1>
       <p class="text-lg">Explore recipes, learn techniques, and craft like a pro!</p>
     </div>
+
+<!-- searchbar to find drinks  -->
+
+    <!-- <ion-searchbar [(ngModel)]="searchQuery" debounce="300" placeholder="Search for a drink..."></ion-searchbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-sm="6" size-md="4" *ngFor="let drink of filteredDrinks" (click)="onDrinkClick(drink.name)">
+          <ion-card>
+            <img [src]="drink.image" alt="{{ drink.name }}">
+            <ion-card-header>
+              <ion-card-title>{{ drink.name }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p><strong>Ingredients:</strong> {{ drink.ingredients }}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid> -->
   </div>
 
   <!-- Category Section -->
@@ -60,35 +83,35 @@
     <div>
       <h2 class="text-3xl font-semibold mb-4">Cocktail Categories</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <div [routerLink]="['/category', 'classics']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+        <div [routerLink]="['/category', 'classics']" class="rounded-lg cursor-pointer shadow-lg overflow-hidden transform transition-transform hover:scale-105">
           <img src="assets/images/classic.jpg" alt="Classics" class="w-full h-40 object-cover">
           <div class="bg-[#DAA520] text-white p-4">Classics</div>
         </div>
-        <div [routerLink]="['/category', 'tropical']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+        <div [routerLink]="['/category', 'tropical']" class="rounded-lg cursor-pointer shadow-lg overflow-hidden transform transition-transform hover:scale-105">
           <img src="assets/images/tropical.png" alt="Tropical" class="w-full h-40 object-cover">
           <div class="bg-[#DAA520] text-white p-4">Tropical</div>
         </div>
-        <div [routerLink]="['/category', 'creamy']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+        <div [routerLink]="['/category', 'creamy']" class="rounded-lg cursor-pointer shadow-lg overflow-hidden transform transition-transform hover:scale-105">
           <img src="assets/images/creamy.jpg" alt="Creamy" class="w-full h-40 object-cover">
           <div class="bg-[#DAA520] text-white p-4">Creamy</div>
         </div>
-        <div [routerLink]="['/category', 'short']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+        <div [routerLink]="['/category', 'short']" class="rounded-lg cursor-pointer shadow-lg overflow-hidden transform transition-transform hover:scale-105">
           <img src="assets/images/short.jpg" alt="Short" class="w-full h-40 object-cover">
           <div class="bg-[#DAA520] text-white p-4">Short</div>
         </div>
-        <div [routerLink]="['/category', 'longdrink']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+        <div [routerLink]="['/category', 'longdrink']" class="rounded-lg cursor-pointer shadow-lg overflow-hidden transform transition-transform hover:scale-105">
           <img src="assets/images/long.jpg" alt="Longdrink" class="w-full h-40 object-cover">
           <div class="bg-[#DAA520] text-white p-4">Longdrink</div>
         </div>
-        <div [routerLink]="['/category', 'sparkling']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+        <div [routerLink]="['/category', 'sparkling']" class="rounded-lg cursor-pointer shadow-lg overflow-hidden transform transition-transform hover:scale-105">
           <img src="assets/images/sparkling.jpg" alt="Sparkling" class="w-full h-40 object-cover">
           <div class="bg-[#DAA520] text-white p-4">Sparkling</div>
         </div>
-        <div [routerLink]="['/category', 'martini']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+        <div [routerLink]="['/category', 'martini']" class="rounded-lg cursor-pointer shadow-lg overflow-hidden transform transition-transform hover:scale-105">
           <img src="assets/images/martini.jpg" alt="Martini" class="w-full h-40 object-cover">
           <div class="bg-[#DAA520] text-white p-4">Martini</div>
         </div>
-        <div [routerLink]="['/category', 'beer']" class="rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+        <div [routerLink]="['/category', 'beer']" class="rounded-lg shadow-lg cursor-pointer overflow-hidden transform transition-transform hover:scale-105">
           <img src="assets/images/beer.jpg" alt="Beer" class="w-full h-40 object-cover">
           <div class="bg-[#DAA520] text-white p-4">Beer</div>
         </div>
@@ -101,7 +124,11 @@
   <div class="image3 flex justify-center items-center text-center py-20">
     <div>
       <h2 class="text-3xl font-semibold mb-4">Popular Cocktails</h2>
-      <ion-button fill="clear" class="p-2 text-white">Try out our top-rated recipes <div class="border-2 ml-4 border-white rounded-full p-3"><i class="fa-solid fa-arrow-right"></i></div></ion-button>
+    <!-- <ion-router-link href="/popular"> -->
+    
+      
+      <div [routerLink]="['/popular']" fill="clear" class="py-2 cursor-pointer px-4 text-white border-2 ml-4 border-white rounded-full  flex flex-row"><span class="pr-3">Try out our top-rated recipes</span><span class="self-center"><i class="fa-solid fa-arrow-right"></i></span></div>
+    <!-- </ion-router-link> -->
 
     </div>
   </div>

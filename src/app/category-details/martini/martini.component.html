@@ -1,0 +1,18 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <!-- Repeatable Card Template -->
+      <ion-col size="12" size-sm="6" size-md="4" *ngFor="let drink of martiniCocktails">
+        <ion-card class="cocktail-card">
+          <ion-card-header>
+            <ion-card-title>{{drink.name}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p><strong>Characteristics:</strong> {{drink.characteristics}}</p>
+            <p>{{drink.description}}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

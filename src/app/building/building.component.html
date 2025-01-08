@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Building</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Technique Header -->
+  <div class="bg-cover bg-center h-64 flex justify-center items-center text-white" style="background-image: url('assets/images/building.jpg');">
+    <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+      <h1 class="text-4xl font-bold">Building</h1>
+      <p class="mt-2">Assemble simple cocktails directly in the serving glass.</p>
+    </div>
+  </div>
+
+  <!-- Technique Details -->
+  <div class="p-4">
+    <h2 class="text-xl font-bold mb-2">How to Build:</h2>
+    <p>Building is the simplest method where ingredients are added directly into the glass, usually without shaking or stirring, making it ideal for cocktails like a gin and tonic.</p>
+
+    <!-- Video Embed -->
+    <h3 class="text-lg font-semibold mt-4">Watch the Building Technique</h3>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/your_building_video_id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</ion-content>

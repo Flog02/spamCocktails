@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Shaking</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Technique Header -->
+  <div class="bg-cover bg-center h-64 flex justify-center items-center text-white" style="background-image: url('assets/images/shaking.jpg');">
+    <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+      <h1 class="text-4xl font-bold">Shaking</h1>
+      <p class="mt-2">Master the art of shaking cocktails for perfect balance and dilution.</p>
+    </div>
+  </div>
+
+  <!-- Technique Details -->
+  <div class="p-4">
+    <h2 class="text-xl font-bold mb-2">How to Shake:</h2>
+    <p>Shaking is used to chill and mix ingredients in cocktails. It helps aerate the ingredients, ensuring a smooth texture and perfect dilution.</p>
+
+    <!-- Video Embed -->
+    <h3 class="text-lg font-semibold mt-4">Watch the Shaking Technique</h3>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/your_shaking_video_id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</ion-content>
