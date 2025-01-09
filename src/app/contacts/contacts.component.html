@@ -1,3 +1,24 @@
-<p>
-  contacts works!
-</p>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Contact Us</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="p-4">
+    <h2 class="text-2xl font-bold">We'd Love to Hear From You!</h2>
+    <p class="mt-2">Feel free to reach out if you have any questions, feedback, or just want to say hello!</p>
+    
+    <div class="mt-6">
+      <h3 class="text-xl font-semibold">Contact Information</h3>
+      <ul class="list-none p-0">
+        <li class="mt-2"><strong>Address:</strong> {{ contactInfo.address }}</li>
+        <li class="mt-2"><strong>Phone:</strong> {{ contactInfo.phone }}</li>
+        <li class="mt-2"><strong>Email:</strong> <a href="mailto:{{ contactInfo.email }}" class="text-blue-500">{{ contactInfo.email }}</a></li>
+      </ul>
+    </div>
+  </div>
+</ion-content>

@@ -1,3 +1,20 @@
-<p>
-  about-us works!
-</p>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>About Us</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="p-4">
+    <h2 class="text-2xl font-bold">Welcome to {{ companyInfo.name }}!</h2>
+    <p class="mt-2">{{ companyInfo.description }}</p>
+
+    <div class="mt-6">
+      <h3 class="text-xl font-semibold">Our Mission</h3>
+      <p class="mt-2">{{ companyInfo.mission }}</p>
+    </div>
+  </div>
+</ion-content>

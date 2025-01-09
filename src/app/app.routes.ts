@@ -115,7 +115,7 @@ export const routes: Routes = [
     path: 'techniques/straining',
     component: StrainingComponent
   },
-  
+ 
 
 
 

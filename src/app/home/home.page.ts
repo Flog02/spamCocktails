@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
-import { IonCardTitle,IonHeader,IonCard,IonCardHeader,IonCardContent,IonGrid,IonRow,IonCol, IonToolbar,IonRouterLink, IonContent,IonButtons,IonTitle,IonMenuButton,IonMenu,IonMenuToggle,IonButton,IonList,IonItem} from '@ionic/angular/standalone';
+import { IonHeader,IonToolbar,IonRouterLink, IonContent,IonButtons,IonTitle,IonMenuButton,IonMenu,IonMenuToggle,IonButton,IonList,IonItem} from '@ionic/angular/standalone';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Router, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';  // <-- Import FormsModule
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { NgFor } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { ProfileComponent } from '../profile/profile.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
-  imports: [IonCardTitle,IonHeader,IonCard,IonCardHeader,IonCardContent,IonGrid,IonRow,IonCol,HttpClientModule,NgFor,FormsModule, IonToolbar, IonRouterLink, IonContent, FontAwesomeModule, IonButtons, IonTitle, IonMenuButton, IonMenu, IonMenuToggle, IonButton, IonItem, IonList, RouterLink],
+  imports: [IonHeader, HttpClientModule, FormsModule, IonToolbar, IonRouterLink, IonContent, FontAwesomeModule, IonButtons, IonTitle, IonMenuButton, IonMenu, IonMenuToggle, IonButton, IonItem, IonList, RouterLink],
 })
 export class HomePage {
   
@@ -60,4 +60,6 @@ export class HomePage {
     this.router.navigate(['/drink-detail', drink.name]);  // Navigate to drink detail page
   }
 
+
+  component=ProfileComponent;
 }

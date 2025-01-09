@@ -1,28 +1,102 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"></ion-back-button>
+      <ion-back-button defaultHref="/techniques"></ion-back-button>
     </ion-buttons>
     <ion-title>Shaking</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <!-- Technique Header -->
-  <div class="bg-cover bg-center h-64 flex justify-center items-center text-white" style="background-image: url('assets/images/shaking.jpg');">
-    <div class="bg-black bg-opacity-50 p-6 rounded-lg">
-      <h1 class="text-4xl font-bold">Shaking</h1>
-      <p class="mt-2">Master the art of shaking cocktails for perfect balance and dilution.</p>
-    </div>
+  <!-- Technique Header with Background Image -->
+  <div 
+  class="bg-cover bg-center flex justify-center items-center text-white" 
+  style="
+    background-image: url('assets/images/shaking.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 60vh; 
+    min-height: 250px; 
+    max-height: 500px;
+  ">
+  <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+    <h1 class="text-4xl font-bold">Shaking</h1>
+    <p class="mt-2">Master the art of shaking cocktails for perfect balance and dilution.</p>
   </div>
+</div>
 
-  <!-- Technique Details -->
-  <div class="p-4">
-    <h2 class="text-xl font-bold mb-2">How to Shake:</h2>
-    <p>Shaking is used to chill and mix ingredients in cocktails. It helps aerate the ingredients, ensuring a smooth texture and perfect dilution.</p>
 
-    <!-- Video Embed -->
+  <!-- Shaking Importance Section -->
+  <section class="p-4">
+    <h2 class="text-xl font-bold mb-2">Why is Cocktail Shaking Important?</h2>
+    <p>Cocktail shaking has four main purposes:</p>
+    <ul class="list-disc ml-6">
+      <li>Chilling your liquid</li>
+      <li>Combining your ingredients</li>
+      <li>Diluting the cocktail</li>
+      <li>Aerating the mixture</li>
+    </ul>
+    <p>Aeration gives cocktails a velvety, consistent texture, reduces bitterness, and enhances sweetness—making shaking an essential technique for certain drinks.</p>
+  </section>
+
+  <!-- Using a Cocktail Shaker -->
+  <section class="p-4">
+    <h2 class="text-xl font-bold mb-2">Using a Cocktail Shaker</h2>
+    <p>This technique is used for cocktails with spirits, juices, creams, fruits, or syrups that need mixing, chilling, and aeration.</p>
+    <p>
+      <a href="#" class="text-blue-500 underline">Find more information on Cocktail Shakers here.</a>
+    </p>
+  </section>
+
+  <!-- How Long to Shake -->
+  <section class="p-4">
+    <h2 class="text-xl font-bold mb-2">How Long Does it Take to Shake a Cocktail?</h2>
+    <p>Shake for a slow count of ten seconds, or until ice forms on the outside of the shaker. Avoid over-shaking with regular bar ice. Use larger cubes to feel the right point for straining.</p>
+    <p class="font-semibold">Top Tip: Most drinks need less than 15 seconds of shaking!</p>
+  </section>
+
+  <!-- How to Use a Cocktail Shaker -->
+  <section class="p-4">
+    <h2 class="text-xl font-bold mb-2">How to Use a Cocktail Shaker</h2>
+    <ol class="list-decimal ml-6">
+      <li>Add ingredients to the shaker.</li>
+      <li>Fill the shaker with ice.</li>
+      <li>Secure the lid and shake vigorously over your shoulder.</li>
+      <li>Shake for a slow count of ten.</li>
+      <li>Strain into a chilled glass.</li>
+    </ol>
+  </section>
+
+  <!-- Advanced Techniques -->
+  <section class="p-4">
+    <h2 class="text-xl font-bold mb-2">Advanced Shaking Techniques</h2>
+
+    <!-- Double Shake -->
+    <h3 class="text-lg font-semibold">The Double Shake</h3>
+    <p>
+      A time-saving technique where two cocktails are shaken at once—one in each hand. Use your dominant hand for drinks served straight up and your non-dominant hand for cocktails served on the rocks to maintain proper texture and dilution.
+    </p>
+    <p class="font-semibold">Top Tip: Every cocktail requires a different shake style. Once you add ice, the timer is on!</p>
+
+    <!-- Dry Shake and Reverse Dry Shake -->
+    <h3 class="text-lg font-semibold mt-4">The Dry Shake and Reverse Dry Shake</h3>
+    <p>
+      A dry shake combines ingredients without ice for at least 30 seconds, essential for cocktails with egg whites, producing a smooth, frothy texture. The reverse dry shake adds ice first, then removes it before shaking again with egg white to enhance foam consistency.
+    </p>
+    <p class="font-semibold">Top Tip: Fine-strain to remove ice shards before the second dry shake.</p>
+  </section>
+
+  <!-- Video Embed -->
+  <section class="p-4">
     <h3 class="text-lg font-semibold mt-4">Watch the Shaking Technique</h3>
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/your_shaking_video_id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
+    <div class="video-container">
+      <iframe 
+        src="https://player.vimeo.com/video/832197278?h=ea3eaf7f07&dnt=1&autoplay=1&muted=1&autopause=0" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+  
 </ion-content>

@@ -1,3 +1,21 @@
-<p>
-  profile works!
-</p>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Your Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="profile-banner">
+    <h2 class="text-3xl font-bold text-center text-blue-600">Your Profile</h2>
+    <p class="text-center mt-2">We are currently working on building personalized user profiles. Stay tuned!</p>
+    
+    <div class="profile-info mt-6">
+      <p class="text-xl">Name: {{ userName }}</p>
+      <p class="text-xl">Email: {{ userEmail }}</p>
+    </div>
+    
+    <div class="mt-8 text-center">
+      <p class="text-lg text-gray-600">Your profile is still under construction. We're working hard to bring this feature to you!</p>
+    </div>
+  </div>
+</ion-content>

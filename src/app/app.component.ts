@@ -27,4 +27,10 @@ export class AppComponent {
   //   const apiUrl = 'http://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita'; // Replace with your API
   //   return this.http.get<any[]>(apiUrl);
   // }
+
+
+
+   
+    
+
 }

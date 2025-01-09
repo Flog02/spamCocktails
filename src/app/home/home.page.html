@@ -7,19 +7,20 @@
     </div>
 
     <!-- Header -->
-    <div class="flex flex-row justify-between items-center px-4">
-      <h1 class="text-2xl font-bold mx-auto">COCKTAILPRO</h1>      <!-- <ion-searchbar class="w-1/4"></ion-searchbar> -->
-      <div class="flex gap-6">
-        <div [routerLink]="['/profile']" class="profile-icon">
-<!-- cursor-pointer doesnt work -->
-          <i class="fa-regular fa-user text-xl cursor-pointer"></i>
+    <div class="flex flex-row justify-between items-center px-4 w-full">
+      <h1 class="text-2xl font-bold mx-auto">COCKTAILPRO</h1>
+      <div class="flex gap-1">
+        <!-- Profile link with cursor-pointer -->
+        <div [routerLink]="['/profile']" class="cursor-pointer inline-flex items-center gap-1">
+          <i class="fa-regular fa-user text-xl"></i>
           Profile
         </div>
-        <div [routerLink]="['/shop']">
-        <i class="fa-solid fa-store text-xl cursor-pointer"></i>
-        Shop
-        </div>     
- </div>
+        <!-- Shop link with cursor-pointer -->
+        <div [routerLink]="['/shop']" class="cursor-pointer inline-flex items-center gap-1">
+          <i class="fa-solid fa-store text-xl"></i>
+          Shop
+        </div>
+      </div>
     </div>
   </ion-toolbar>
 </ion-header>
@@ -34,9 +35,7 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item button [routerLink]="['/home']">Home</ion-item>
         <ion-item button [routerLink]="['/popular']">Popular Cocktails</ion-item>
-        <ion-item button [routerLink]="['/category']">Categories</ion-item>
         <ion-item button [routerLink]="['/techniques']">Tutorials</ion-item>
         <ion-item button [routerLink]="['/about-us']">About Us</ion-item>
         <ion-item button [routerLink]="['/contacts']">Contact</ion-item>
@@ -47,67 +46,16 @@
     </ion-content>
   </ion-menu>
 
-
-
-
   <!-- Hero Section -->
-  <!-- <div class="image1 relative">
-<video autoplay muted loop src="assets/images/cocktail1.mp4"></video>
-    <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
-      <h1 class="text-4xl font-bold mb-4" *ngFor="let drink of cocktails">Discover Your Perfect Cocktail</h1>
-      <p class="text-lg">Explore recipes, learn techniques, and craft like a pro!</p>
-    </div> -->
-
-<!-- searchbar to find drinks  -->
-
-    <!-- <ion-searchbar [(ngModel)]="searchQuery" debounce="300" placeholder="Search for a drink..."></ion-searchbar>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="12" size-sm="6" size-md="4" *ngFor="let drink of filteredDrinks" (click)="onDrinkClick(drink.name)">
-          <ion-card>
-            <img [src]="drink.image" alt="{{ drink.name }}">
-            <ion-card-header>
-              <ion-card-title>{{ drink.name }}</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              <p><strong>Ingredients:</strong> {{ drink.ingredients }}</p>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-    </ion-grid> -->
-  <!-- </div> -->
   <div class="image1 relative">
     <video autoplay muted loop playsinline src="assets/images/cocktail1.mp4" class="w-full h-full object-cover"></video>
     <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
-      <h1 class="text-4xl font-bold mb-4">
-        Discover Your Perfect Cocktail
-      </h1>
+      <h1 class="text-4xl font-bold mb-4">Discover Your Perfect Cocktail</h1>
       <p class="text-lg">Explore recipes, learn techniques, and craft like a pro!</p>
     </div>
   </div>
-  
-  <!-- Searchbar for finding drinks -->
-  <!-- <ion-searchbar [(ngModel)]="searchQuery" debounce="300" placeholder="Search for a drink..."></ion-searchbar>
-  <ion-grid>
-    <ion-row>
-      <ion-col size="12" size-sm="6" size-md="4" *ngFor="let drink of cocktails" (click)="onDrinkClick(drink)">
-        <ion-card>
-          <img [src]="drink.strDrinkThumb" alt="{{ drink.strDrink }}" class="rounded-t-md">
-          <ion-card-header>
-            <ion-card-title>{{ drink.strDrink }}</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            <p><strong>Category:</strong> {{ drink.strCategory }}</p>
-            <p><strong>Glass:</strong> {{ drink.strGlass }}</p>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid> -->
-  
 
-  <!-- Category Section -->
+  <!-- Cocktail Categories Section -->
   <div class="image2 flex justify-center items-center text-center py-20">
     <div>
       <h2 class="text-3xl font-semibold mb-4">Cocktail Categories</h2>
@@ -148,38 +96,27 @@
     </div>
   </div>
 
-
   <!-- Popular Cocktails Section -->
   <div class="image3 flex justify-center items-center text-center py-20">
     <div>
       <h2 class="text-3xl font-semibold mb-4">Popular Cocktails</h2>
-    <!-- <ion-router-link href="/popular"> -->
-    
-      
-      <div [routerLink]="['/popular']" fill="clear" class="py-2 cursor-pointer px-4 text-white border-2 ml-4 border-white rounded-full  flex flex-row"><span class="pr-3">Try out our top-rated recipes</span><span class="self-center"><i class="fa-solid fa-arrow-right"></i></span></div>
-    <!-- </ion-router-link> -->
-
+      <div [routerLink]="['/popular']" class="py-2 cursor-pointer px-4 text-white border-2 ml-4 border-white rounded-full flex flex-row">
+        <span class="pr-3">Try out our top-rated recipes</span>
+        <span class="self-center"><i class="fa-solid fa-arrow-right"></i></span>
+      </div>
     </div>
   </div>
 
-<!-- Learn preping -->
-
- <!-- Cocktail Making Techniques Section with Background Image -->
-<div class=" flex justify-center items-center text-center py-48" style="background-image: url('assets/images/prepping.jpg'); background-size: cover; background-position: center;">
-  <div class="bg-black bg-opacity-50 w-full h-full flex flex-col justify-center items-center text-white p-8">
-    <h2 class="text-3xl font-semibold mb-4">Cocktail Making Techniques</h2>
-    <p class="text-lg mb-8">Learn how to stir, shake, muddle, and perfect your cocktail-making skills!</p>
-    <div [routerLink]="['/techniques']" class="bg-[#DAA520] text-white p-4 rounded-lg cursor-pointer transition-transform hover:scale-105">
-      <span>Learn the Art of Cocktail Making</span>
+  <!-- Cocktail Making Techniques Section -->
+  <div class="flex justify-center items-center text-center py-48" style="background-image: url('assets/images/prepping.jpg'); background-size: cover; background-position: center;">
+    <div class="bg-black bg-opacity-50 w-full h-full flex flex-col justify-center items-center text-white p-8">
+      <h2 class="text-3xl font-semibold mb-4">Cocktail Making Techniques</h2>
+      <p class="text-lg mb-8">Learn how to stir, shake, muddle, and perfect your cocktail-making skills!</p>
+      <div [routerLink]="['/techniques']" class="bg-[#DAA520] text-white p-4 rounded-lg cursor-pointer transition-transform hover:scale-105">
+        <span>Learn the Art of Cocktail Making</span>
+      </div>
     </div>
   </div>
-</div>
-
-
-
-
-
-
 
   <!-- Footer -->
   <div class="footer1 text-center text-white py-5">

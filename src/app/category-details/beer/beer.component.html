@@ -1,15 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Beer Cocktails</ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content>
   <ion-grid>
     <ion-row>
-      <!-- Repeatable Card Template -->
-      <ion-col size="12" size-sm="6" size-md="4" *ngFor="let drink of beerCocktails">
+      <ion-col size="12" size-sm="6" size-md="4" *ngFor="let drink of items">
         <ion-card class="cocktail-card">
           <ion-card-header>
-            <ion-card-title>{{drink.name}}</ion-card-title>
+            <ion-card-title>{{ drink.name }}</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            <p><strong>Characteristics:</strong> {{drink.characteristics}}</p>
-            <p>{{drink.description}}</p>
+            <p><strong>Characteristics:</strong> {{ drink.characteristics }}</p>
+            <p>{{ drink.description }}</p>
           </ion-card-content>
         </ion-card>
       </ion-col>
