@@ -9,8 +9,8 @@ describe('PopularComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ PopularComponent ],
-      imports: [IonicModule.forRoot()]
+      
+      imports: [IonicModule.forRoot(),PopularComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(PopularComponent);

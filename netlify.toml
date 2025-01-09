@@ -1,0 +1,7 @@
+[build]
+publish = "dist/spam"  # Update to your actual build output folder
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200

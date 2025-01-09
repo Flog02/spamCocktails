@@ -9,8 +9,8 @@ describe('ShortComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShortComponent ],
-      imports: [IonicModule.forRoot()]
+      
+      imports: [IonicModule.forRoot(),ShortComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(ShortComponent);

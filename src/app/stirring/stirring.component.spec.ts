@@ -9,8 +9,8 @@ describe('StirringComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ StirringComponent ],
-      imports: [IonicModule.forRoot()]
+      
+      imports: [IonicModule.forRoot(),StirringComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(StirringComponent);

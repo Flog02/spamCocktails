@@ -9,8 +9,8 @@ describe('MuddlingComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ MuddlingComponent ],
-      imports: [IonicModule.forRoot()]
+     
+      imports: [IonicModule.forRoot(),MuddlingComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(MuddlingComponent);

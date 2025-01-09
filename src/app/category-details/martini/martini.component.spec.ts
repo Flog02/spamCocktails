@@ -9,8 +9,8 @@ describe('MartiniComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ MartiniComponent ],
-      imports: [IonicModule.forRoot()]
+     
+      imports: [IonicModule.forRoot(),MartiniComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(MartiniComponent);

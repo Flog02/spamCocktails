@@ -9,8 +9,8 @@ describe('LongdrinkComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ LongdrinkComponent ],
-      imports: [IonicModule.forRoot()]
+      
+      imports: [IonicModule.forRoot(),LongdrinkComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(LongdrinkComponent);

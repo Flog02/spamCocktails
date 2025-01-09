@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
+import { ActivatedRoute } from '@angular/router';
+import { of } from 'rxjs';
 
 import { CategoryDetailComponent } from './category-detail.component';
 
@@ -9,8 +11,20 @@ describe('CategoryDetailComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ CategoryDetailComponent ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot(), CategoryDetailComponent],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            params: of({ id: '1' }), // Mock route params (adjust as necessary)
+            snapshot: {
+              paramMap: {
+                get: (key: string) => '1', // Mock route parameter (adjust key if needed)
+              },
+            },
+          },
+        },
+      ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(CategoryDetailComponent);

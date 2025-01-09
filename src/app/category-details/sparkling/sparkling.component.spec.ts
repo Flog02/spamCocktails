@@ -9,8 +9,8 @@ describe('SparklingComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ SparklingComponent ],
-      imports: [IonicModule.forRoot()]
+      
+      imports: [IonicModule.forRoot(),SparklingComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(SparklingComponent);

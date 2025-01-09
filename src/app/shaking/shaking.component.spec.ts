@@ -9,8 +9,8 @@ describe('ShakingComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShakingComponent ],
-      imports: [IonicModule.forRoot()]
+    
+      imports: [IonicModule.forRoot(),ShakingComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(ShakingComponent);

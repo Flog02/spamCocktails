@@ -37,28 +37,28 @@ export class HomePage {
   //   },
   //   // Add other drinks...
   // ];
-  searchQuery: string = '';  // Search query for user input
-  cocktails: any[] = [];     // Cocktails array to hold API response
+  // searchQuery: string = '';  // Search query for user input
+  // cocktails: any[] = [];     // Cocktails array to hold API response
 
   constructor(private router: Router, private http: HttpClient) {
-    this.loadCocktails();  // Load cocktails on component initialization
-    console.log(this.cocktails);  // Debugging: Output cocktails to console
+    // this.loadCocktails();  // Load cocktails on component initialization
+    // console.log(this.cocktails);  // Debugging: Output cocktails to console
   }
 
-  loadCocktails(): void {
-    this.getCocktails().subscribe((response: any) => {
-      this.cocktails = response.drinks;  // Correct property access for cocktail API
-    });
-  }
+  // loadCocktails(): void {
+  //   this.getCocktails().subscribe((response: any) => {
+  //     this.cocktails = response.drinks;  // Correct property access for cocktail API
+  //   });
+  // }
 
-  getCocktails(): Observable<any> {  // Type as `Observable<any>` since the API response structure may vary
-    const apiUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita';  // Corrected to HTTPS
-    return this.http.get<any>(apiUrl);
-  }
+  // getCocktails(): Observable<any> {  // Type as `Observable<any>` since the API response structure may vary
+  //   const apiUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita';  // Corrected to HTTPS
+  //   return this.http.get<any>(apiUrl);
+  // }
 
-  onDrinkClick(drink: any) {
-    this.router.navigate(['/drink-detail', drink.name]);  // Navigate to drink detail page
-  }
+  // onDrinkClick(drink: any) {
+  //   this.router.navigate(['/drink-detail', drink.name]);  // Navigate to drink detail page
+  // }
 
 
   component=ProfileComponent;

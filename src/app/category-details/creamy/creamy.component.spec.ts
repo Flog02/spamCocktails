@@ -9,8 +9,8 @@ describe('CreamyComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ CreamyComponent ],
-      imports: [IonicModule.forRoot()]
+      
+      imports: [IonicModule.forRoot(),CreamyComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(CreamyComponent);
