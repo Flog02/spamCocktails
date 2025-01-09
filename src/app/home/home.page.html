@@ -51,12 +51,12 @@
 
 
   <!-- Hero Section -->
-  <div class="image1 relative">
+  <!-- <div class="image1 relative">
 <video autoplay muted loop src="assets/images/cocktail1.mp4"></video>
     <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
       <h1 class="text-4xl font-bold mb-4" *ngFor="let drink of cocktails">Discover Your Perfect Cocktail</h1>
       <p class="text-lg">Explore recipes, learn techniques, and craft like a pro!</p>
-    </div>
+    </div> -->
 
 <!-- searchbar to find drinks  -->
 
@@ -76,7 +76,36 @@
         </ion-col>
       </ion-row>
     </ion-grid> -->
+  <!-- </div> -->
+  <div class="image1 relative">
+    <video autoplay muted loop playsinline src="assets/images/cocktail1.mp4" class="w-full h-full object-cover"></video>
+    <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
+      <h1 class="text-4xl font-bold mb-4">
+        Discover Your Perfect Cocktail
+      </h1>
+      <p class="text-lg">Explore recipes, learn techniques, and craft like a pro!</p>
+    </div>
   </div>
+  
+  <!-- Searchbar for finding drinks -->
+  <ion-searchbar [(ngModel)]="searchQuery" debounce="300" placeholder="Search for a drink..."></ion-searchbar>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-sm="6" size-md="4" *ngFor="let drink of cocktails" (click)="onDrinkClick(drink)">
+        <ion-card>
+          <img [src]="drink.strDrinkThumb" alt="{{ drink.strDrink }}" class="rounded-t-md">
+          <ion-card-header>
+            <ion-card-title>{{ drink.strDrink }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p><strong>Category:</strong> {{ drink.strCategory }}</p>
+            <p><strong>Glass:</strong> {{ drink.strGlass }}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
 
   <!-- Category Section -->
   <div class="image2 flex justify-center items-center text-center py-20">
