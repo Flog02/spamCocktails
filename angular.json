@@ -18,7 +18,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath":"www",
+            "outputPath": "dist/spam",
             "index": "src/index.html",
             "polyfills": [
               "src/polyfills.ts"
@@ -34,8 +34,7 @@
             ],
             "styles": ["src/global.scss", "src/theme/variables.scss"],
             "scripts": [],
-            "browser": "src/main.ts",
-            "baseHref": "/spamCocktails/"
+            "browser": "src/main.ts"
           },
           "configurations": {
             "production": {
