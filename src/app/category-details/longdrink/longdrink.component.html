@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
-    <ion-title>Long Cocktails</ion-title>
+    <ion-title>LongDrink Cocktails</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -15,6 +15,7 @@
           <ion-card-header>
             <ion-card-title>{{ drink.name }}</ion-card-title>
           </ion-card-header>
+          <img  [src]="drink.image" alt="{{ drink.name }}" class="cocktail-image" />
           <ion-card-content>
             <p><strong>Characteristics:</strong> {{ drink.characteristics }}</p>
             <p>{{ drink.description }}</p>

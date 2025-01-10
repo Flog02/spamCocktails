@@ -10,7 +10,8 @@
     <div class="flex flex-row justify-between items-center px-4 w-full">
       <h1 class="text-2xl font-bold mx-auto">COCKTAILPRO</h1>
       <div class="flex gap-1">
-        <!-- Profile link with cursor-pointer -->
+        <ion-buttons>
+            <!-- Profile link with cursor-pointer -->
         <div [routerLink]="['/profile']" class="cursor-pointer inline-flex items-center gap-1">
           <i class="fa-regular fa-user text-xl"></i>
           Profile
@@ -20,6 +21,8 @@
           <i class="fa-solid fa-store text-xl"></i>
           Shop
         </div>
+        </ion-buttons>
+      
       </div>
     </div>
   </ion-toolbar>
