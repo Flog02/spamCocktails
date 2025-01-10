@@ -7,12 +7,13 @@
     </div>
 
     <!-- Header -->
-    <div class="flex flex-row justify-between items-center px-4 w-full">
-      <h1 class="text-2xl font-bold mx-auto">COCKTAILPRO</h1>
+    <div class="flex flex-row justify-center  w-full">
+      <h1 class="text-2xl font-bold  items-center">COCKTAILPRO</h1>
       <div class="flex gap-1">
         <ion-buttons>
             <!-- Profile link with cursor-pointer -->
-        <div [routerLink]="['/profile']" class="cursor-pointer inline-flex items-center gap-1">
+        <div class="absolute float-right flex flex-row">
+            <div [routerLink]="['/profile']" class="cursor-pointer inline-flex items-center gap-1">
           <i class="fa-regular fa-user text-xl"></i>
           Profile
         </div>
@@ -21,6 +22,7 @@
           <i class="fa-solid fa-store text-xl"></i>
           Shop
         </div>
+      </div>
         </ion-buttons>
       
       </div>
