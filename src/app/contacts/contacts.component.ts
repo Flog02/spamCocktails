@@ -12,7 +12,8 @@ export class ContactsComponent  implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {  console.log('Component initialized');
+  }
   contactInfo = {
     address: '123 Cocktail Avenue, Mix City, 45678',
     phone: '+123 456 7890',

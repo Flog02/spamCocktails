@@ -13,7 +13,8 @@ export class ShopComponent  implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {  console.log('Component initialized');
+  }
   contactEmail = 'contact@cocktailbar.com';
 
 }

@@ -12,6 +12,7 @@ export class MuddlingComponent  implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {  console.log('Component initialized');
+  }
 
 }

@@ -12,7 +12,10 @@ export class AboutUsComponent  implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('Component initialized');
+
+  }
   companyInfo = {
     name: 'CocktailPro',
     description: 'We are passionate about crafting the perfect cocktails, combining art and technique to offer you the best drinks in town.',

@@ -61,5 +61,5 @@ export class HomePage {
   // }
 
 
-  component=ProfileComponent;
+  
 }

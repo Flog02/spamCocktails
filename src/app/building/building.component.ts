@@ -11,6 +11,7 @@ export class BuildingComponent  implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {  console.log('Component initialized');
+  }
 
 }

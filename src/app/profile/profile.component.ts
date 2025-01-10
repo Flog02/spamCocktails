@@ -12,7 +12,8 @@ export class ProfileComponent  implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {  console.log('Component initialized');
+  }
   userName = 'John Doe'; // Example user
   userEmail = 'johndoe@example.com'; // Example email
 }

@@ -12,6 +12,7 @@ export class StrainingComponent  implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {  console.log('Component initialized');
+  }
 
 }

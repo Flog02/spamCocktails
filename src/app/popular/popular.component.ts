@@ -13,7 +13,8 @@ export class PopularComponent  implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {  console.log('Component initialized');
+  }
   popularCocktails = [
     { name: 'White Russian', image: 'assets/images/white-russian.jpg', characteristics: 'Vodka, Coffee Liqueur, Cream', description: 'A smooth, creamy cocktail with a coffee kick.' },
     { name: 'Mudslide', image: 'assets/images/mudslide.jpg', characteristics: 'Vodka, Coffee Liqueur, Irish Cream', description: 'A decadent dessert cocktail.' },
