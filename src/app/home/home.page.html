@@ -28,26 +28,27 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item button [routerLink]="['/popular']">Popular Cocktails</ion-item>
+      <ion-item button [routerLink]="['/techniques']">Tutorials</ion-item>
+      <ion-item button [routerLink]="['/about-us']">About Us</ion-item>
+      <ion-item button [routerLink]="['/contacts']">Contact</ion-item>
+    </ion-list>
+    <ion-menu-toggle>
+      <ion-button expand="full">Close</ion-button>
+    </ion-menu-toggle>
+  </ion-content>
+</ion-menu>
+
+<ion-content [fullscreen]="true" id="main-content">
   <!-- Sidebar Menu -->
-  <ion-menu contentId="main-content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Menu</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-item button [routerLink]="['/popular']">Popular Cocktails</ion-item>
-        <ion-item button [routerLink]="['/techniques']">Tutorials</ion-item>
-        <ion-item button [routerLink]="['/about-us']">About Us</ion-item>
-        <ion-item button [routerLink]="['/contacts']">Contact</ion-item>
-      </ion-list>
-      <ion-menu-toggle>
-        <ion-button expand="full">Close</ion-button>
-      </ion-menu-toggle>
-    </ion-content>
-  </ion-menu>
 
   <!-- Hero Section -->
   <div class="image1 relative">
