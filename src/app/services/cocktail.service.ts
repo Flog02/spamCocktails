@@ -52,52 +52,52 @@ type:'beerCocktails',
   {
     type:'creamyCocktails',
     items :[
-      { name: 'White Russian', image: 'assets/images/white-russian.jpg', characteristics: 'Vodka, Coffee Liqueur, Cream', description: 'A smooth, creamy cocktail with a coffee kick.' },
-      { name: 'Mudslide', image: 'assets/images/mudslide.jpg', characteristics: 'Vodka, Coffee Liqueur, Irish Cream', description: 'A decadent dessert cocktail.' },
-      { name: 'Grasshopper', image: 'assets/images/grasshopper.jpg', characteristics: 'Crème de Menthe, Crème de Cacao, Cream', description: 'A sweet, minty drink with a chocolate finish.' },
-      { name: 'Brandy Alexander', image: 'assets/images/brandy-alexander.jpg', characteristics: 'Brandy, Crème de Cacao, Cream', description: 'A rich and creamy brandy cocktail.' },
-      { name: 'Pina Colada', image: 'https://dishnthekitchen.com/wp-content/uploads/2021/07/vertpinacoladaclose.jpg', characteristics: 'Rum, Pineapple Juice, Coconut Cream', description: 'A tropical delight in a glass.' }
+      { name: 'White Russian', image: 'https://www.acouplecooks.com/wp-content/uploads/2021/04/Baileys-White-Russian-001.jpg', characteristics: 'Vodka, Coffee Liqueur, Cream', description: 'A smooth, creamy cocktail with a coffee kick.' },
+      { name: 'Mudslide', image: 'https://www.acouplecooks.com/wp-content/uploads/2021/01/Mudslide-008.jpg', characteristics: 'Vodka, Coffee Liqueur, Irish Cream', description: 'A decadent dessert cocktail.' },
+      { name: 'Grasshopper', image: 'https://www.acouplecooks.com/wp-content/uploads/2021/02/Grasshopper-Drink-008.jpg', characteristics: 'Crème de Menthe, Crème de Cacao, Cream', description: 'A sweet, minty drink with a chocolate finish.' },
+      { name: 'Brandy Alexander', image: 'https://www.acouplecooks.com/wp-content/uploads/2021/02/Brandy-Alexander-001-1.jpg', characteristics: 'Brandy, Crème de Cacao, Cream', description: 'A rich and creamy brandy cocktail.' },
+      { name: 'Pina Colada', image: 'https://www.acouplecooks.com/wp-content/uploads/2025/01/Pina-colada-smoothie-0006-784x980.jpg', characteristics: 'Rum, Pineapple Juice, Coconut Cream', description: 'A tropical delight in a glass.' }
     ]},
   {
     type:'longDrinks',
     items : [
-      { name: 'Long Island Iced Tea', image: 'https://www.thecocktaildb.com/images/media/drink/tqpvqp1468929843.jpg', characteristics: 'Vodka, Gin, Tequila, Rum, Triple Sec, Cola', description: 'A strong mix with a cola finish.' },
-      { name: 'Tom Collins', image: 'https://www.thecocktaildb.com/images/media/drink/ztpspx1468929411.jpg', characteristics: 'Gin, Lemon, Sugar, Soda Water', description: 'A fizzy gin drink with lemon.' },
-      { name: 'Moscow Mule', image: 'https://www.thecocktaildb.com/images/media/drink/3qmgj41504914664.jpg', characteristics: 'Vodka, Ginger Beer, Lime', description: 'A spicy and refreshing vodka drink.' },
-      { name: 'Dark and Stormy', image: 'https://www.thecocktaildb.com/images/media/drink/2w3hsg1504889920.jpg', characteristics: 'Rum, Ginger Beer, Lime', description: 'A bold rum cocktail with a ginger kick.' },
-      { name: 'Highball', image: 'https://www.thecocktaildb.com/images/media/drink/9wg3g71504884307.jpg', characteristics: 'Whiskey, Soda Water', description: 'A simple whiskey soda.' }
+      { name: 'Long Island Iced Tea', image: 'https://www.acouplecooks.com/wp-content/uploads/2021/02/Long-Island-Iced-Tea-003.jpg', characteristics: 'Vodka, Gin, Tequila, Rum, Triple Sec, Cola', description: 'A strong mix with a cola finish.' },
+      { name: 'Tom Collins', image: 'https://www.acouplecooks.com/wp-content/uploads/2019/12/Tom-Collins-001.jpg', characteristics: 'Gin, Lemon, Sugar, Soda Water', description: 'A fizzy gin drink with lemon.' },
+      { name: 'Moscow Mule', image: 'https://www.acouplecooks.com/wp-content/uploads/2021/09/Cranberry-Mule-001.jpg', characteristics: 'Vodka, Ginger Beer, Lime', description: 'A spicy and refreshing vodka drink.' },
+      { name: 'Dark and Stormy', image: 'https://www.acouplecooks.com/wp-content/uploads/2020/08/Dark-and-Stormy-004.jpg', characteristics: 'Rum, Ginger Beer, Lime', description: 'A bold rum cocktail with a ginger kick.' },
+      { name: 'Highball', image: 'https://www.acouplecooks.com/wp-content/uploads/2020/05/Whiskey-Highball-004.jpg', characteristics: 'Whiskey, Soda Water', description: 'A simple whiskey soda.' }
     ]},
   {
     type:'martiniCocktails',
     items : [
-      { name: 'Martini', image: 'https://www.thecocktaildb.com/images/media/drink/3pylqc1504373514.jpg', characteristics: 'Gin, Dry Vermouth', description: 'A classic gin martini.' },
-      { name: 'Espresso Martini', image: 'https://www.thecocktaildb.com/images/media/drink/7ia5dh1504826158.jpg', characteristics: 'Vodka, Espresso, Coffee Liqueur', description: 'A coffee-flavored twist on the martini.' },
-      { name: 'French Martini', image: 'https://www.thecocktaildb.com/images/media/drink/yzp5hx1504374897.jpg', characteristics: 'Vodka, Raspberry Liqueur, Pineapple Juice', description: 'A fruity and elegant martini.' },
-      { name: 'Apple Martini', image: 'https://www.thecocktaildb.com/images/media/drink/qyyvtu1468876147.jpg', characteristics: 'Vodka, Apple Schnapps', description: 'A tart and sweet apple martini.' }
+      { name: 'Martini', image: 'https://www.acouplecooks.com/wp-content/uploads/2024/12/Pickle-Martini-0002-784x981.jpg', characteristics: 'Gin, Dry Vermouth', description: 'A classic gin martini.' },
+      { name: 'Espresso Martini', image: 'https://www.acouplecooks.com/wp-content/uploads/2023/06/Espresso-Martini-051-784x980.jpg', characteristics: 'Vodka, Espresso, Coffee Liqueur', description: 'A coffee-flavored twist on the martini.' },
+      { name: 'French Martini', image: 'https://www.acouplecooks.com/wp-content/uploads/2020/07/French-Martini-001.jpg', characteristics: 'Vodka, Raspberry Liqueur, Pineapple Juice', description: 'A fruity and elegant martini.' },
+      { name: 'Apple Martini', image: 'https://www.acouplecooks.com/wp-content/uploads/2021/09/Apple-Martini-Appletini-001.jpg', characteristics: 'Vodka, Apple Schnapps', description: 'A tart and sweet apple martini.' }
     ]},
   {
     type:'shortDrinks' ,
     items : [
-      { name: 'Whiskey Sour', image: 'https://www.thecocktaildb.com/images/media/drink/4p0n6x1504374447.jpg', characteristics: 'Whiskey, Lemon, Sugar', description: 'A tangy whiskey cocktail.' },
-      { name: 'Negroni', image: 'https://www.thecocktaildb.com/images/media/drink/h3j9kq1504373484.jpg', characteristics: 'Gin, Campari, Sweet Vermouth', description: 'A bitter Italian classic.' },
-      { name: 'Boulevardier', image: 'https://www.thecocktaildb.com/images/media/drink/3nmj2s1504373375.jpg', characteristics: 'Bourbon, Campari, Sweet Vermouth', description: 'A whiskey twist on the Negroni.' },
-      { name: 'Daiquiri', image: 'https://www.thecocktaildb.com/images/media/drink/su3s2n1504374460.jpg', characteristics: 'Rum, Lime, Sugar', description: 'A tart and refreshing rum cocktail.' }
+      { name: 'Whiskey Sour', image: 'https://www.acouplecooks.com/wp-content/uploads/2023/10/Whiskey-Sour-062-784x980.jpg', characteristics: 'Whiskey, Lemon, Sugar', description: 'A tangy whiskey cocktail.' },
+      { name: 'Negroni', image: 'https://www.acouplecooks.com/wp-content/uploads/2023/06/Aperol-Negroni-004.jpg', characteristics: 'Gin, Campari, Sweet Vermouth', description: 'A bitter Italian classic.' },
+      { name: 'Boulevardier', image: 'https://www.acouplecooks.com/wp-content/uploads/2020/04/Negroni-Boulevardier-020.jpg', characteristics: 'Bourbon, Campari, Sweet Vermouth', description: 'A whiskey twist on the Negroni.' },
+      { name: 'Daiquiri', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Classic_Daiquiri_in_Cocktail_Glass.jpg/375px-Classic_Daiquiri_in_Cocktail_Glass.jpg', characteristics: 'Rum, Lime, Sugar', description: 'A tart and refreshing rum cocktail.' }
     ]},
   {
     type:'sparklingCocktails',
     items : [
-      { name: 'Mimosa', image: 'https://www.thecocktaildb.com/images/media/drink/mk78lh1504374891.jpg', characteristics: 'Champagne, Orange Juice', description: 'A brunch classic.' },
-      { name: 'Bellini', image: 'https://www.thecocktaildb.com/images/media/drink/ywx7h51504374979.jpg', characteristics: 'Prosecco, Peach Purée', description: 'A sweet and fruity sparkling cocktail.' },
-      { name: 'French 75', image: 'https://www.thecocktaildb.com/images/media/drink/7nreww1504374910.jpg', characteristics: 'Gin, Champagne, Lemon Juice', description: 'A sparkling citrus gin drink.' },
-      { name: 'Aperol Spritz', image: 'https://www.thecocktaildb.com/images/media/drink/9lmk2s1504374602.jpg', characteristics: 'Aperol, Prosecco, Soda Water', description: 'A bitter-sweet Italian cocktail.' }
+      { name: 'Mimosa', image: 'https://www.acouplecooks.com/wp-content/uploads/2021/12/Christmas-Mimosa-002.jpg', characteristics: 'Champagne, Orange Juice', description: 'A brunch classic.' },
+      { name: 'Bellini', image: 'https://www.acouplecooks.com/wp-content/uploads/2020/07/Peach-Bellini-006.jpg', characteristics: 'Prosecco, Peach Purée', description: 'A sweet and fruity sparkling cocktail.' },
+      { name: 'French 75', image: 'https://www.acouplecooks.com/wp-content/uploads/2019/12/French-75-003.jpg', characteristics: 'Gin, Champagne, Lemon Juice', description: 'A sparkling citrus gin drink.' },
+      { name: 'Aperol Spritz', image: 'https://www.acouplecooks.com/wp-content/uploads/2024/12/Cranberry-Aperol-Spritz-0003-784x981.jpg', characteristics: 'Aperol, Prosecco, Soda Water', description: 'A bitter-sweet Italian cocktail.' }
     ]},
   {
     type: 'tropicalCocktails',
     items : [
-      { name: 'Pina Colada', image: 'https://www.thecocktaildb.com/images/media/drink/4u5fgh1504374897.jpg', characteristics: 'Rum, Coconut, Pineapple', description: 'A tropical delight.' },
-      { name: 'Mai Tai', image: 'https://www.thecocktaildb.com/images/media/drink/5a3zv51504350394.jpg', characteristics: 'Rum, Lime, Orgeat, Orange Liqueur', description: 'A fruity, tropical rum cocktail.' },
-      { name: 'Hurricane', image: 'https://www.thecocktaildb.com/images/media/drink/1q7v0e1504374915.jpg', characteristics: 'Rum, Passion Fruit, Lime', description: 'A strong and fruity storm in a glass.' },
-      { name: 'Blue Lagoon', image: 'https://www.thecocktaildb.com/images/media/drink/yv94s81504375033.jpg', characteristics: 'Vodka, Blue Curaçao, Lemonade', description: 'A vibrant, citrusy cocktail.' }
+      { name: 'Pina Colada', image: 'https://www.acouplecooks.com/wp-content/uploads/2025/01/Pina-colada-smoothie-0006-784x980.jpg', characteristics: 'Rum, Coconut, Pineapple', description: 'A tropical delight.' },
+      { name: 'Mai Tai', image: 'https://www.acouplecooks.com/wp-content/uploads/2022/10/Mai-Tai-Recipe-009.jpg', characteristics: 'Rum, Lime, Orgeat, Orange Liqueur', description: 'A fruity, tropical rum cocktail.' },
+      { name: 'Hurricane', image: 'https://www.acouplecooks.com/wp-content/uploads/2020/11/Hurricane-Cocktail-005.jpg', characteristics: 'Rum, Passion Fruit, Lime', description: 'A strong and fruity storm in a glass.' },
+      { name: 'Blue Lagoon', image: 'https://www.acouplecooks.com/wp-content/uploads/2021/03/Blue-Lagoon-Cocktail-002.jpg', characteristics: 'Vodka, Blue Curaçao, Lemonade', description: 'A vibrant, citrusy cocktail.' }
     ]},
   ]
   constructor() { }

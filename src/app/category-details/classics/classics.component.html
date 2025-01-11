@@ -11,11 +11,11 @@
   <ion-grid>
     <ion-row>
       <ion-col size="12" size-sm="6" size-md="4" *ngFor="let drink of items">
-        <ion-card class="cocktail-card">
+        <ion-card class="cocktail-card" (click)="openModal(drink.name)">
           <ion-card-header>
             <ion-card-title>{{ drink.name }}</ion-card-title>
           </ion-card-header>
-          <img  [src]="drink.image" alt="{{ drink.name }}" class="cocktail-image" />
+          <img [src]="drink.image" alt="{{ drink.name }}" class="cocktail-image" />
           <ion-card-content>
             <p><strong>Characteristics:</strong> {{ drink.characteristics }}</p>
             <p>{{ drink.description }}</p>
@@ -24,4 +24,140 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <ion-modal trigger="open-modal" class="w-auto h-auto">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-button (click)="cancel()">Cancel</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ng-container *ngIf="name === 'Old Fashioned'">
+          <h1 class="drink-title">Old Fashioned</h1>
+          <img src="https://www.tasteofhome.com/wp-content/uploads/2017/09/Brandy-Old-Fashioned-Sweet_exps37101_HC2847498D03_28_5bC_RMS.jpg" alt="Old Fashioned" class="drink-image" />
+          <p class="description">A timeless whiskey-based cocktail with bitters and sugar.</p>
+          <h2 class="steps-title">Ingredients</h2>
+          <ul class="ingredients-list">
+            <li>2 oz bourbon or rye whiskey</li>
+            <li>1 sugar cube</li>
+            <li>2 dashes Angostura bitters</li>
+            <li>Orange twist for garnish</li>
+          </ul>
+          <h2 class="steps-title">Steps</h2>
+          <ol class="steps-list">
+            <li>Place the sugar cube in an Old Fashioned glass and add bitters.</li>
+            <li>Add a splash of water and muddle until the sugar is dissolved.</li>
+            <li>Fill the glass with ice and pour in the whiskey.</li>
+            <li>Stir gently and garnish with an orange twist.</li>
+          </ol>
+        </ng-container>
+
+        <ng-container *ngIf="name === 'Margarita'">
+          <h1 class="drink-title">Margarita</h1>
+          <img src="https://i0.wp.com/delicerecipes.com/wp-content/uploads/2021/01/Frozen-Margarita-Cocktail.jpg?fit=1170%2C1463&ssl=1" alt="Margarita" class="drink-image" />
+          <p class="description">A refreshing tequila-based cocktail with lime juice and a salted rim.</p>
+          <h2 class="steps-title">Ingredients</h2>
+          <ul class="ingredients-list">
+            <li>2 oz tequila</li>
+            <li>1 oz lime juice</li>
+            <li>1 oz triple sec</li>
+            <li>Salt for rim</li>
+            <li>Lime wheel for garnish</li>
+          </ul>
+          <h2 class="steps-title">Steps</h2>
+          <ol class="steps-list">
+            <li>Run a lime wedge around the rim of a glass and dip in salt.</li>
+            <li>Combine tequila, lime juice, and triple sec in a shaker with ice.</li>
+            <li>Shake well and strain into the prepared glass.</li>
+            <li>Garnish with a lime wheel and serve immediately.</li>
+          </ol>
+        </ng-container>
+
+        <ng-container *ngIf="name === 'Martini'">
+          <h1 class="drink-title">Martini</h1>
+          <img src="https://kitchenswagger.com/wp-content/uploads/2020/07/mojito-recipe1.jpg" alt="Martini" class="drink-image" />
+          <p class="description">A sophisticated gin or vodka-based cocktail with dry vermouth.</p>
+          <h2 class="steps-title">Ingredients</h2>
+          <ul class="ingredients-list">
+            <li>2 oz gin or vodka</li>
+            <li>1/2 oz dry vermouth</li>
+            <li>Olive or lemon twist for garnish</li>
+          </ul>
+          <h2 class="steps-title">Steps</h2>
+          <ol class="steps-list">
+            <li>Combine gin or vodka and vermouth in a mixing glass with ice.</li>
+            <li>Stir well and strain into a chilled martini glass.</li>
+            <li>Garnish with an olive or lemon twist.</li>
+          </ol>
+        </ng-container>
+
+        <ng-container *ngIf="name === 'Mojito'">
+          <h1 class="drink-title">Mojito</h1>
+          <img src="https://i.pinimg.com/originals/44/a3/a2/44a3a2b008e44dcb12fa564663daf7aa.jpg" alt="Mojito" class="drink-image" />
+          <p class="description">A refreshing rum-based cocktail with mint, lime, and soda.</p>
+          <h2 class="steps-title">Ingredients</h2>
+          <ul class="ingredients-list">
+            <li>2 oz white rum</li>
+            <li>1 oz lime juice</li>
+            <li>2 tsp sugar</li>
+            <li>6-8 fresh mint leaves</li>
+            <li>Soda water</li>
+            <li>Mint sprig and lime wedge for garnish</li>
+          </ul>
+          <h2 class="steps-title">Steps</h2>
+          <ol class="steps-list">
+            <li>Muddle mint leaves and sugar with lime juice in a glass.</li>
+            <li>Add ice and pour in the rum.</li>
+            <li>Top with soda water and stir gently.</li>
+            <li>Garnish with a mint sprig and lime wedge.</li>
+          </ol>
+        </ng-container>
+
+
+        <ng-container *ngIf="name === 'Manhattan'">
+          <h1 class="drink-title">Manhattan</h1>
+          <img src="https://www.aspicyperspective.com/wp-content/uploads/2021/04/manhattan-cocktail-recipe-6.jpg" alt="Manhattan" class="drink-image" />
+          <p class="description">A smooth whiskey drink with rich, sweet notes.</p>
+          <h2 class="steps-title">Ingredients</h2>
+          <ul class="ingredients-list">
+            <li>2 oz rye whiskey</li>
+            <li>1 oz sweet vermouth</li>
+            <li>2 dashes of Angostura bitters</li>
+            <li>Cherry for garnish</li>
+          </ul>
+          <h2 class="steps-title">Steps</h2>
+          <ol class="steps-list">
+            <li>Combine rye whiskey, sweet vermouth, and bitters in a mixing glass with ice.</li>
+            <li>Stir until well chilled.</li>
+            <li>Strain into a chilled cocktail glass.</li>
+            <li>Garnish with a cherry.</li>
+          </ol>
+        </ng-container>
+        
+        <ng-container *ngIf="name === 'Daiquiri'">
+          <h1 class="drink-title">Daiquiri</h1>
+          <img src="https://equallywed.com/wp-content/uploads/2018/07/how-to-make-a-daiquiri.jpg" alt="Daiquiri" class="drink-image" />
+          <p class="description">A classic rum cocktail with a tart lime flavor.</p>
+          <h2 class="steps-title">Ingredients</h2>
+          <ul class="ingredients-list">
+            <li>2 oz white rum</li>
+            <li>1 oz fresh lime juice</li>
+            <li>0.75 oz simple syrup</li>
+          </ul>
+          <h2 class="steps-title">Steps</h2>
+          <ol class="steps-list">
+            <li>Combine rum, lime juice, and simple syrup in a shaker filled with ice.</li>
+            <li>Shake well until chilled.</li>
+            <li>Strain into a chilled cocktail glass.</li>
+            <li>Garnish with a lime wheel, if desired.</li>
+          </ol>
+        </ng-container>
+        
+
+      </ion-content>
+    </ng-template>
+  </ion-modal>
 </ion-content>

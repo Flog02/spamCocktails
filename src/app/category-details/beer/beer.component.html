@@ -11,7 +11,7 @@
   <ion-grid>
     <ion-row>
       <ion-col size="12" size-sm="6" size-md="4" *ngFor="let drink of items">
-        <ion-card class="cocktail-card">
+        <ion-card class="cocktail-card" (click)="openmodal(drink.name)" id="open-modal" >
           <ion-card-header>
             <ion-card-title>{{ drink.name }}</ion-card-title>
           </ion-card-header>
@@ -24,4 +24,94 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <ion-modal trigger="open-modal" class="w-auto h-auto">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-button (click)="cancel()">Cancel</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ng-container *ngIf="name === 'Black and Tan'">
+          <h1 class="drink-title">Black and Tan</h1>
+          <img src="assets/images/black-tan.png" alt="Black and Tan" class="drink-image" />
+          <p class="description">A classic layered beer cocktail made with a pale ale and a dark stout.</p>
+          <h2 class="steps-title">Ingredients</h2>
+          <ul class="ingredients-list">
+            <li>1/2 pint pale ale (such as Bass)</li>
+            <li>1/2 pint dark stout (such as Guinness)</li>
+          </ul>
+          <h2 class="steps-title">Steps</h2>
+          <ol class="steps-list">
+            <li>Pour the pale ale into a pint glass halfway.</li>
+            <li>Slowly pour the dark stout over a spoon to layer it on top.</li>
+            <li>Serve immediately and enjoy the beautiful layers.</li>
+          </ol>
+        </ng-container>
+      
+        <ng-container *ngIf="name === 'Michelada'">
+          <h1 class="drink-title">Michelada</h1>
+          <img src="assets/images/michelada.jpg" alt="Michelada" class="drink-image" />
+          <p class="description">A spicy and tangy Mexican beer cocktail perfect for a hot day.</p>
+          <h2 class="steps-title">Ingredients</h2>
+          <ul class="ingredients-list">
+            <li>12 oz lager (such as Corona)</li>
+            <li>1 tbsp lime juice</li>
+            <li>1 dash hot sauce</li>
+            <li>1 dash Worcestershire sauce</li>
+            <li>Pinch of salt</li>
+            <li>Ice cubes</li>
+            <li>Lime wedge and salt for rim</li>
+          </ul>
+          <h2 class="steps-title">Steps</h2>
+          <ol class="steps-list">
+            <li>Rim a glass with salt by rubbing the lime wedge around the edge.</li>
+            <li>Fill the glass with ice cubes.</li>
+            <li>Add lime juice, hot sauce, Worcestershire sauce, and a pinch of salt.</li>
+            <li>Pour the beer into the glass and gently stir.</li>
+            <li>Garnish with a lime wedge and serve immediately.</li>
+          </ol>
+        </ng-container>
+      
+        <ng-container *ngIf="name === 'Snakebite'">
+          <h1 class="drink-title">Snakebite</h1>
+          <img src="assets/images/snakebite.jpg" alt="Snakebite" class="drink-image" />
+          <p class="description">A sharp mix of lager and cider with a distinctive taste.</p>
+          <h2 class="steps-title">Ingredients</h2>
+          <ul class="ingredients-list">
+            <li>1/2 pint lager</li>
+            <li>1/2 pint cider</li>
+          </ul>
+          <h2 class="steps-title">Steps</h2>
+          <ol class="steps-list">
+            <li>Pour the lager into a glass halfway.</li>
+            <li>Slowly add the cider to fill the rest of the glass.</li>
+            <li>Mix gently and serve chilled.</li>
+          </ol>
+        </ng-container>
+      
+        <ng-container *ngIf="name === 'Radler'">
+          <h1 class="drink-title">Radler</h1>
+          <img src="assets/images/radler.jpg" alt="Radler" class="drink-image" />
+          <p class="description">A refreshing mix of beer and lemonade for a light, citrusy drink.</p>
+          <h2 class="steps-title">Ingredients</h2>
+          <ul class="ingredients-list">
+            <li>1/2 pint beer (lager or pilsner)</li>
+            <li>1/2 pint lemonade</li>
+          </ul>
+          <h2 class="steps-title">Steps</h2>
+          <ol class="steps-list">
+            <li>Pour the beer into a glass halfway.</li>
+            <li>Top it up with lemonade.</li>
+            <li>Stir gently and serve chilled with a lemon slice.</li>
+          </ol>
+        </ng-container>
+      </ion-content>
+      
+    </ng-template>
+  </ion-modal>
+
 </ion-content>
