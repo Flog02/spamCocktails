@@ -1,0 +1,3 @@
+:80
+root * ${ANGULAR_OUTPUT_PATH}
+file_server
