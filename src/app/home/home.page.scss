@@ -16,3 +16,28 @@
   background-color: black;
   // height: 10rem;
 }
+
+
+.profile {
+  position: relative;
+  display: inline-block; /* Adjust as needed for layout */
+  padding-bottom: 5px; /* Space for the border */
+}
+
+.profile::after {
+  content: ''; /* Creates an element for the border */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px; /* Adjust the thickness of the border */
+  background-color: rgb(118, 118, 0); /* Border color */
+  transition: width 0.4s ease-out, left 0.4s ease-out;
+  
+}
+
+.profile:hover::after {
+  width: 100%;
+  left: 0;
+}
+
