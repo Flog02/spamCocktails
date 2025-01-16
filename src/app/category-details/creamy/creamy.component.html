@@ -11,7 +11,7 @@
   <ion-grid>
     <ion-row>
       <ion-col size="12" size-sm="6" size-md="4" *ngFor="let drink of items">
-        <ion-card class="cocktail-card">
+        <ion-card class="cocktail-card" (click)="openModal()">
           <ion-card-header>
             <ion-card-title>{{ drink.name }}</ion-card-title>
           </ion-card-header>
@@ -24,4 +24,39 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <ion-modal trigger="open-modal" class="w-auto h-auto">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-button (click)="cancel()">Cancel</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ng-container >
+          <h1 class="drink-title">Old Fashioned</h1>
+          <img src="https://www.tasteofhome.com/wp-content/uploads/2017/09/Brandy-Old-Fashioned-Sweet_exps37101_HC2847498D03_28_5bC_RMS.jpg" alt="Old Fashioned" class="drink-image" />
+          <p class="description">A timeless whiskey-based cocktail with bitters and sugar.</p>
+          <h2 class="steps-title">Ingredients</h2>
+          <ul class="ingredients-list">
+            <li>2 oz bourbon or rye whiskey</li>
+            <li>1 sugar cube</li>
+            <li>2 dashes Angostura bitters</li>
+            <li>Orange twist for garnish</li>
+          </ul>
+          <h2 class="steps-title">Steps</h2>
+          <ol class="steps-list">
+            <li>Place the sugar cube in an Old Fashioned glass and add bitters.</li>
+            <li>Add a splash of water and muddle until the sugar is dissolved.</li>
+            <li>Fill the glass with ice and pour in the whiskey.</li>
+            <li>Stir gently and garnish with an orange twist.</li>
+          </ol>
+        </ng-container>
+
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
 </ion-content>
