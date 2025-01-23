@@ -10,9 +10,9 @@
     <div class="flex flex-row justify-between items-center px-4 w-full">
       <h1 class="text-2xl font-bold mx-auto">COCKTAILPRO</h1>
       <div class="flex gap-1">
-        <ion-buttons>
+        <ion-buttons >
             <!-- Profile link with cursor-pointer -->
-            <div [routerLink]="['/profile']" class="profile cursor-pointer inline-flex items-center gap-1">
+            <div [routerLink]="['/profile']" class="profile cursor-pointer inline-flex items-center gap-1 ">
               <i class="fa-regular fa-user text-xl"></i>
           Profile
         </div>
@@ -61,7 +61,7 @@
   </div>
 
   <!-- Cocktail Categories Section -->
-  <div class="image2 flex justify-center items-center text-center py-20">
+  <div class="image2 flex justify-center items-center text-center py-20 px-2">
     <div>
       <h2 class="text-3xl font-semibold mb-4">Cocktail Categories</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -96,6 +96,10 @@
         <div [routerLink]="['/category', 'beer']" class="rounded-lg shadow-lg cursor-pointer overflow-hidden transform transition-transform hover:scale-105">
           <img src="assets/images/beer.jpg" alt="Beer" class="w-full h-40 object-cover">
           <div class="bg-[#DAA520] text-white p-4">Beer</div>
+        </div>
+        <div [routerLink]="['/category', 'tropical']" class="rounded-lg cursor-pointer shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+          <img src="assets/images/tropical.png" alt="Tropical" class="w-full h-40 object-cover">
+          <div class="bg-[#DAA520] text-white p-4">Tropical</div>
         </div>
       </div>
     </div>
